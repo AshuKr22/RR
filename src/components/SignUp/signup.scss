@@ -1,0 +1,79 @@
+.signup
+{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+font-weight: 400;
+line-height: 44px;
+text-align: left;
+color: #5C6874;
+
+    
+    input
+    {
+        width: 348px;
+        height: 52px;
+        border-radius: 12px 0px  0px  12px;
+        border-style: hidden;
+
+    }
+    button
+    {
+        border-style: hidden;
+
+        width: 97px;
+        height: 52px;
+        border-radius: 0px  12px  12px  0px;
+        background: #1B88F4;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #fff;
+    }
+
+}
+
+
+
+@media (max-width:991px)
+{
+    .signup
+    {
+        font-size: 24px;
+        input
+    {
+        width: 166px;
+        height: 52px;
+        border-radius: 12px 0px  0px  12px;
+        border-style: hidden;
+
+    }
+
+    }
+}
+@media (max-width:436px)
+{
+    .signup
+    {
+        flex-direction: column;
+        font-size: 20px;
+        align-items: center;
+        input{
+            width: 210px;
+        }
+        
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+

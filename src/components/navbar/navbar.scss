@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+$font-primary : "Inter", sans-serif;
+$normal : 400;
+$bold : 700;
+$primary-size: 16px;
+$heading-size : 48px;
+$primary-text : #4B5665;
+$secondary-text: #2C384A;
+ 
+
+
+#root
+{
+    font-family: $font-primary;
+    height: 100;
+
+}
+body
+{
+    margin: 0;
+}
+.navbar
+{
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 64px;
+    background: #212731;
+    div
+    {
+        margin-left: auto;
+        
+    }
+ 
+    form
+    {
+        display: flex;
+        align-items: center;
+        max-width: 258px;
+        height: 37px;
+        border-radius: 8px;
+        border-style: hidden;
+        border: 1px;
+        background-color: #fff;
+
+    }
+    input
+    {
+        background-color: #fff;
+       border-style: none;
+        
+    }
+    .nav-list
+    {
+        margin-left: 79px;
+        padding: 0;
+        margin-right: auto;
+        display: flex;
+        gap:53px;
+        li
+        {
+            list-style: none;
+        }
+        
+
+    }
+    a
+    {
+        text-decoration: none;
+        
+    }
+}
+.nav-items
+{
+    color: #D1D6DA;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.hamburger-menu
+{
+    position: relative;
+    z-index: 10002;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media (max-width:991px){
+    .navbar
+    {
+        justify-content: space-around;
+        .search
+        {
+            margin-left: 0px;
+
+        }
+
+        li
+        {
+            list-style: none;
+            cursor: pointer;
+            font-size: 28px;
+        }
+        position: relative;
+        .nav-list 
+        {
+            position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+
+    
+        visibility: hidden;
+        opacity: 0;
+
+        }
+         .nav-list-active
+        {
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100vw;
+        
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgb(0, 0, 0);
+        transition: 0.2s;
+        align-items: center;
+        transition: 0.2s;
+
+        z-index: 10001;
+            visibility: visible;
+        opacity: 1;
+
+        }
+        .hamburger-menu
+        {
+            margin-left: 0;
+            z-index: 10002;
+            
+            cursor: pointer;
+            transition: 0.2s;
+            opacity: 1;
+            visibility: visible;
+            button
+            {
+                size: 80px;
+            }
+        
+        }
+        
+        
+    }
+    
+    
+}
